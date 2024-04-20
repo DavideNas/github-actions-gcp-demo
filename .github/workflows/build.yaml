@@ -24,7 +24,7 @@ jobs:
       env:
         GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
       run:
-        gcloud auth configure-docker eu.gcr.io europe-west8-docker.pkg.dev
+        gcloud auth configure-docker europe-west8-docker.pkg.dev
     - name: Build
       run: |-
         docker build -t europe-west8-docker.pkg.dev/github-action-demo-420908/demo/nginx:latest .
