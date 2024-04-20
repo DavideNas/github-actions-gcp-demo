@@ -27,7 +27,9 @@ jobs:
         gcloud auth configure-docker europe-west8-docker.pkg.dev
     - name: Build
       run: |-
-        docker build -t europe-west8-docker.pkg.dev/$GOOGLE_PROJECT/demo/nginx:latest .
+        docker build -t europe-west8-docker.pkg.dev/github-action-demo-420908/demo/nginx:latest .
     - name: Publish
       run: |-
-        docker push europe-west8-docker.pkg.dev/$GOOGLE_PROJECT/demo/nginx:latest
+        docker push europe-west8-docker.pkg.dev/github-action-demo-420908/demo/nginx:latest
+
+        
